@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.22)
 
 # Set your SKSE plugin name and version.
 project(
-	ExampleProject
+	HairGrowth_SKSE
 	VERSION 1.0.0
 	LANGUAGES CXX
 )
@@ -25,6 +25,7 @@ endif()
 if(${SKYRIM_AE})
 	message(INFO "Building CMake setup for Skyrim AE: ${SKYRIM_AE}")
 	add_definitions(-DSKYRIM_AE)
+	set(SKYRIM_SUPPORT_AE true)
 	set(SKYRIM_VERSION AE)
 elseif(${SKYRIM_SE})
 	message(INFO "Building CMake setup for Skyrim SE: ${SKYRIM_SE}")

@@ -1,2 +1,0 @@
-cls
-build\test\ExampleProjectTests\Debug\ExampleProjectTests.exe
